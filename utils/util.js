@@ -21,6 +21,8 @@ export function getRankList(callback) {
             const [all, icon, name, detail] = item.match(
               /<img src="([\s\S]*?)"[\s\S]*?<h4>([\s\S]*?)<\/h4>[\s\S]*?<span class="sdesc">([\s\S]*?)<\/span>/
             );
+            // console.log(icon, name, detail)
+            // https://img.awesomes.cn/thumbs/told/151011135942-0-1.jpg vue 一个用以创建用户接口的直观、快速、简洁的 MVVM 框架
             return [...array, {
               icon,
               name,

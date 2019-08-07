@@ -16,7 +16,6 @@ page {
 .rankItem {
   padding: 30rpx 0;
   border-bottom: 1px dashed #ddd;
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
