@@ -1,0 +1,102 @@
+/**index.wxss**/
+page {
+  background: #f7f8fa;
+}
+
+.rankBanner {
+  background-image: linear-gradient(135deg, #79f1a4, #0e5cad);
+  color: #fff;
+  padding: 30rpx 30rpx 0;
+}
+
+.rankList {
+  padding: 0 30rpx 30rpx;
+}
+
+.rankItem {
+  padding: 30rpx 0;
+  border-bottom: 1px dashed #ddd;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  color: #4e4f54;
+}
+
+.rankItem image {
+  width: 150rpx;
+  height: 150rpx;
+}
+
+.rankItemFirst {
+  padding: 30rpx;
+  text-align: center;
+  overflow: hidden;
+  background-color: rgba(8, 105, 132, .52);
+  color: #60bed8;
+  border: 0;
+  flex-direction: column;
+}
+
+.rankItemLast{
+  border-bottom: 0;
+}
+
+.rankNumber {
+  width: 100rpx;
+  font-size: 30rpx;
+  font-weight: bold;
+  text-align: center;
+}
+
+.icon {
+  width: 150rpx;
+  height: 150rpx;
+  background: #f3f3f3;
+}
+
+.rankItem .icon--first {
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 50%;
+  margin: 0 auto;
+  animation: icon--first 20s infinite linear;
+}
+
+@keyframes icon--first {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.rankInfo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 0 30rpx;
+}
+
+.name {
+  font-size: 36rpx;
+  font-weight: bold;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.detail {
+  font-size: 26rpx;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+
+.source {
+  text-align: center;
+  font-size: 30rpx;
+  color: #666;
+  padding: 0 30rpx 30rpx;
+}

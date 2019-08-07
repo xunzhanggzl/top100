@@ -1,0 +1,23 @@
+<!--index.wxml-->
+<view class="rank" hidden="{{rankList.length <= 0}}">
+  <view class="rankBanner">
+    <view class="rankItem rankItemFirst">
+      <image lazy-load class="icon icon--first" mode="aspectFill" src="{{rankList[0].icon}}" />
+      <view class="rankInfo">
+        <view class="name">{{rankList[0].name}}</view>
+        <view class="detail">{{rankList[0].detail}}</view>
+      </view>
+    </view>
+  </view>
+  <view class="rankList">
+    <view class="rankItem {{index === rankList.length - 1 ? 'rankItemLast' : ''}}" wx:for="{{rankList}}" wx:for-item="rank" wx:for-index="index" wx:key="id" wx:if="{{index > 0}}">
+      <view class="rankNumber">{{index + 1}}</view>
+      <image lazy-load class="icon" mode="aspectFill" src="{{rank.icon}}" />
+      <view class="rankInfo">
+        <view class="name">{{rank.name}}</view>
+        <view class="detail">{{rank.detail}}</view>
+      </view>
+    </view>
+  </view>
+  <view class="source" bindtap="copyGithubUrl">{{githubUrl}}</view>
+</view>
